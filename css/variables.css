@@ -1,0 +1,80 @@
+/* ========================================
+   ANNIVERSARY WEBSITE - CSS VARIABLES
+   ======================================== */
+
+:root {
+  /* Color Palette */
+  --color-light-pink: #ffb6c1;
+  --color-hot-pink: #ff69b4;
+  --color-lavender-blush: #fff0f5;
+  --color-dark-red: #8b0000;
+  --color-gold: #ffd700;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-dark-gray: #2a2a2a;
+  --color-light-gray: #f5f5f5;
+  --color-medium-gray: #888888;
+
+  /* Semantic Colors */
+  --primary-color: #ff69b4;
+  --secondary-color: #8b0000;
+  --accent-color: #ffd700;
+  --background-color: #fff0f5;
+  --text-color: #2a2a2a;
+  --border-color: #ffb6c1;
+
+  /* Typography */
+  --font-serif: 'Georgia', 'Garamond', serif;
+  --font-cursive: 'Brush Script MT', 'Lucida Grande', cursive;
+  --font-sans: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --font-size-sm: 14px;
+  --font-size-base: 16px;
+  --font-size-lg: 18px;
+  --font-size-xl: 24px;
+  --font-size-2xl: 32px;
+  --font-size-3xl: 48px;
+  --font-size-4xl: 64px;
+
+  /* Spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-2xl: 48px;
+
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-medium: 0.3s ease;
+  --transition-slow: 0.5s ease;
+
+  /* Border Radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --radius-full: 50%;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.15);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.2);
+
+  /* Z-index */
+  --z-hidden: -1;
+  --z-base: 1;
+  --z-dropdown: 10;
+  --z-sticky: 20;
+  --z-fixed: 30;
+  --z-modal: 40;
+  --z-tooltip: 50;
+}
+
+/* Dark Mode Colors */
+[data-theme="dark"] {
+  --primary-color: #ff85c0;
+  --secondary-color: #ff69b4;
+  --background-color: #1a1a1a;
+  --text-color: #f5f5f5;
+  --border-color: #ff69b4;
+  --light-gray: #333333;
+}

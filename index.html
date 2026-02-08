@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy 4th Anniversary d Chlm - Our Love Story</title>
+    <meta name="description" content="A romantic anniversary website celebrating our 4 years together">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75'>💕</text></svg>">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!-- Background Effects -->
+    <div class="falling-hearts" id="fallingHearts"></div>
+    <div class="sparkles" id="sparkles"></div>
+
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="header__content">
+            <div class="header__logo" onclick="app.navigateTo('home')">
+                <span class="header__logo-icon">💕</span>
+                <span>4 Years of Love</span>
+            </div>
+            
+            <nav class="nav" id="navigation">
+                <a href="#home" class="nav__link active" data-page="home">🏠 Home</a>
+                <a href="#quotes" class="nav__link" data-page="quotes">💬 Love Quotes</a>
+                <a href="#memories" class="nav__link" data-page="memories">📸 Our Memories</a>
+                <a href="#videos" class="nav__link" data-page="videos">🎬 Special Moments</a>
+                <a href="#quiz" class="nav__link" data-page="quiz">🎯 Quiz</a>
+                <a href="#letter" class="nav__link" data-page="letter">💌 Love Letter</a>
+            </nav>
+
+            <div class="nav__icons">
+                <button class="nav__icon" id="themeToggle" title="Toggle dark mode">🌙</button>
+                <button class="nav__toggle" id="navToggle">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="app-main">
+
+        <!-- HOME SECTION -->
+        <section id="home" class="page-section active">
+            <div class="hero">
+                <div class="hero__background"></div>
+                <div class="hero__content">
+                    <h1 class="hero__title">Happy 4th Anniversary d Chlm</h1>
+                    <p class="hero__subtitle">Four incredible years with you</p>
+                    <div class="hero__cta">
+                        <button class="btn btn--primary btn--heartbeat" onclick="document.querySelector('section:nth-of-type(2)').scrollIntoView({behavior: 'smooth'})">
+                            Start Our Journey ❤️
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Timeline -->
+            <div class="container" style="padding: 60px var(--spacing-md);">
+                <div class="section__header">
+                    <h2 class="section__title">Our Love Story</h2>
+                </div>
+                <div class="timeline" id="timeline"></div>
+            </div>
+        </section>
+
+        <!-- LOVE QUOTES SECTION -->
+        <section id="quotes" class="page-section section">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Love Quotes</h2>
+                    <p class="section__subtitle">Words that capture what we feel</p>
+                </div>
+
+                <div class="quotes__grid" id="quotesGrid"></div>
+
+                <div style="text-align: center;">
+                    <button class="btn btn--secondary quotes__random-btn" onclick="app.quotes.displayRandomQuote()">
+                        ✨ Show Random Quote
+                    </button>
+                </div>
+
+                <div class="quotes__display" id="randomQuoteDisplay" style="display: none;">
+                    <p class="random-quote__text" id="randomQuoteText"></p>
+                    <p class="random-quote__author" id="randomQuoteAuthor"></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- MEMORIES SECTION -->
+        <section id="memories" class="page-section section">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Our Memories</h2>
+                    <p class="section__subtitle">Cherished moments frozen in time</p>
+                </div>
+
+                <div class="memories__grid" id="memoriesGrid"></div>
+            </div>
+        </section>
+
+        <!-- LIGHTBOX -->
+        <div class="lightbox" id="lightbox">
+            <div class="lightbox__content">
+                <img id="lightboxImage" class="lightbox__image" src="" alt="">
+                <button class="lightbox__close" onclick="app.lightbox.close()">✕</button>
+                <button class="lightbox__nav lightbox__nav--prev" onclick="app.lightbox.prev()">❮</button>
+                <button class="lightbox__nav lightbox__nav--next" onclick="app.lightbox.next()">❯</button>
+            </div>
+        </div>
+
+        <!-- VIDEOS SECTION -->
+        <section id="videos" class="page-section section">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Special Moments</h2>
+                    <p class="section__subtitle">Videos of our best moments</p>
+                </div>
+
+                <div class="videos__grid" id="videosGrid"></div>
+            </div>
+        </section>
+
+        <!-- VIDEO PLAYER -->
+        <div class="video-player" id="videoPlayer">
+            <button class="video-player__close" onclick="app.videoPlayer.close()">✕</button>
+            <div class="video-player__container">
+                <video id="videoPlayerElement" class="video-player__video" controls>
+                    Your browser does not support the video tag.
+                </video>
+                <div class="video-player__controls">
+                    <div class="video-player__progress" id="videoProgress" onclick="app.videoPlayer.seek(event)">
+                        <div class="video-player__progress-bar" id="videoProgressBar"></div>
+                    </div>
+                    <div class="video-player__buttons">
+                        <button class="video-player__btn" id="videPlayBtn" onclick="app.videoPlayer.togglePlay()">▶</button>
+                        <div class="video-player__volume">
+                            <span class="video-player__volume-icon">🔊</span>
+                            <input type="range" class="video-player__volume-slider" id="videoVolumeSlider" min="0" max="100" value="70" oninput="app.videoPlayer.setVolume(this.value)">
+                        </div>
+                        <button class="video-player__btn" onclick="app.videoPlayer.toggleFullscreen()">⛶</button>
+                        <span class="video-player__time" id="videoTime">0:00 / 0:00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- QUIZ SECTION -->
+        <section id="quiz" class="page-section section">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Memory Quiz</h2>
+                    <p class="section__subtitle">Test your knowledge of our love story</p>
+                </div>
+
+                <div class="quiz__container" id="quizContainer"></div>
+            </div>
+        </section>
+
+        <!-- LOVE LETTER SECTION -->
+        <section id="letter" class="page-section section">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">A Letter to You</h2>
+                    <p class="section__subtitle">Words from my heart</p>
+                </div>
+
+                <div class="letter">
+                    <div class="letter__paper">
+                        <div class="letter__header">
+                            <div class="letter__date" id="letterDate"></div>
+                            <div class="letter__greeting">My Dearest,</div>
+                        </div>
+                        <div class="letter__content" id="letterContent"></div>
+                        <div class="letter__signature">
+                            With all my love,<br>
+                            Your Admirer 💕
+                        </div>
+                    </div>
+                    <div class="letter__actions">
+                        <button class="btn btn--primary" onclick="window.print()">🖨️ Print</button>
+                        <button class="btn btn--secondary" onclick="app.letter.downloadPDF()">📥 Download PDF</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Music Player -->
+    <div class="music-player" id="musicPlayer">
+        <div class="music-player__header">
+            <div class="music-player__title">🎵 Romantic Playlist</div>
+            <button class="music-player__minimize" onclick="app.musicPlayer.toggleMinimize()">_</button>
+        </div>
+        <div id="musicPlayerContent">
+            <div class="music-player__track">
+                <div class="music-player__track-name" id="musicTrackName">Loading...</div>
+                <div class="music-player__track-artist">Artist Name</div>
+            </div>
+            <div class="music-player__progress" id="musicProgress" onclick="app.musicPlayer.seek(event)">
+                <div class="music-player__progress-bar" id="musicProgressBar"></div>
+            </div>
+            <div class="music-player__controls">
+                <button class="music-player__btn" onclick="app.musicPlayer.previousTrack()">⏮</button>
+                <button class="music-player__btn music-player__btn--play" id="musicPlayBtn" onclick="app.musicPlayer.togglePlay()">▶</button>
+                <button class="music-player__btn" onclick="app.musicPlayer.nextTrack()">⏭</button>
+            </div>
+            <div class="music-player__volume">
+                <span class="music-player__volume-icon">🔊</span>
+                <input type="range" class="music-player__volume-slider" id="musicVolumeSlider" min="0" max="100" value="30" oninput="app.musicPlayer.setVolume(this.value)">
+            </div>
+        </div>
+    </div>
+
+    <!-- Hidden Audio Element for Music Player -->
+    <audio id="audioPlayer"></audio>
+
+    <!-- JavaScript -->
+    <script src="js/utils/animation-effects.js"></script>
+    <script src="js/utils/lightbox.js"></script>
+    <script src="js/utils/music-player.js"></script>
+    <script src="js/utils/video-player.js"></script>
+    <script src="js/utils/lazy-load.js"></script>
+    <script src="js/components/quotes.js"></script>
+    <script src="js/components/memories.js"></script>
+    <script src="js/components/videos.js"></script>
+    <script src="js/components/quiz.js"></script>
+    <script src="js/components/letter.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
