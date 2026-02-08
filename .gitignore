@@ -1,0 +1,43 @@
+# Git Ignore File
+
+# OS Files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Dependencies (if using npm in future)
+node_modules/
+package-lock.json
+
+# Build artifacts
+dist/
+build/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Environment
+.env
+.env.local
+
+# Cache
+.cache
+.parcel-cache
+
+# Editor backups
+*.bak
+*.backup
+
+# Media (optional - uncomment if hosting elsewhere)
+# images/
+# videos/
+# audio/
