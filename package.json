@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "description": "A romantic anniversary website - 4th year celebration",
   "main": "server.js",
+  "homepage": "https://Jack280322.github.io/anniversary-website",
   "scripts": {
     "start": "node server.js",
     "dev": "node server.js",
-    "deploy": "git push origin main"
+    "deploy": "gh-pages -d ."
   },
   "keywords": [
     "anniversary",
@@ -21,6 +22,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-username/anniversary-website"
+    "url": "https://github.com/Jack280322/anniversary-website"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }

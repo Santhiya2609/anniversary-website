@@ -5,9 +5,9 @@
 
 const MusicPlayer = {
     playlist: [
-        { name: 'Romantic Melody', artist: 'Composer Unknown', file: 'audio/romantic-1.mp3', duration: 0 },
-        { name: 'Love Song', artist: 'Composer Unknown', file: 'audio/romantic-2.mp3', duration: 0 },
-        { name: 'Our Song', artist: 'Composer Unknown', file: 'audio/romantic-3.mp3', duration: 0 },
+        { name: 'Kannana Kannea', artist: 'Aniruth', file: 'audio/Kannana-Kanne.mp3', duration: 4.27 },
+        { name: 'Vizhigalil oru', artist: 'GVP', file: 'audio/Vizhigalil-Oru-Vaanavil.mp3', duration: 6.00 },
+        { name: 'Our Song', artist: 'Dhanush', file: 'audio/Yaarum-Illa-MassTamilan.dev.mp3', duration: 3.25 },
         { name: 'Forever with You', artist: 'Composer Unknown', file: 'audio/romantic-4.mp3', duration: 0 }
     ],
     

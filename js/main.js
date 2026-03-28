@@ -180,34 +180,54 @@ const app = {
 
         const timelineEvents = [
             {
-                date: 'January 1, 2021',
-                title: 'The First Meeting',
-                content: 'Our eyes met and my world changed forever. That moment started everything.'
+                date: 'March 28, 2022',
+                title: 'The First conversation with us.',
+                content: 'my world changed forever. That moment started everything.'
             },
             {
-                date: 'February 14, 2021',
-                title: 'First Valentine',
-                content: 'Our first Valentine\'s Day together was magical and unforgettable.'
+                date: 'Augest 27, 2022',
+                title: 'First real in person meet',
+                content: 'Our first Day together was magical and unforgettable.'
             },
             {
-                date: 'May 20, 2021',
-                title: 'First Anniversary',
-                content: 'One year together and my love for you grows stronger every day.'
+                date: 'April 21, 2023',
+                title: 'Oru love started',
+                content: 'Both proposed on this day and oru love grows stronger every day.'
             },
             {
-                date: 'January 1, 2022',
+                date: 'June 10, 2023',
+                title: 'We reveled our love to public',
+                content: 'We open up with our love in office and friends and everyone.'
+            },
+            {
+                date: 'March 28, 2024',
                 title: 'Second Anniversary',
-                content: 'Two years of happiness, laughter, and countless beautiful memories.'
+                content: 'Two years of building our life together, and it just keeps getting better.'
             },
             {
-                date: 'January 1, 2023',
+                date: 'March 28, 2025',
                 title: 'Third Anniversary',
-                content: 'Three years of building our life together, and it just keeps getting better.'
+                content: 'Three years of happiness, laughter, and countless beautiful memories.'
             },
             {
-                date: 'January 1, 2024',
+                date: 'April 14, 2025',
+                title: 'Open up in our Family',
+                content: 'Convince our family for our love. And we did it.'
+            },
+            {
+                date: 'March 15, 2026',
+                title: 'Our Engagement',
+                content: 'Finally we did it what we expect in our life form our next speak Anniversary will husband and wife.'
+            },
+            {
+                date: 'March 28, 2026',
                 title: 'Fourth Anniversary',
                 content: 'Four incredible years with you. Today, I celebrate our love and commitment.'
+            },
+            {
+                date: 'June 23, 2026',
+                title: 'Planned our marriage',
+                content: 'After a 4 years we finally came to an achived moment. our marriage with 2 family support.'
             }
         ];
 

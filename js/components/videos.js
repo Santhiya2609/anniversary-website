@@ -7,39 +7,27 @@ const VideosComponent = {
     videos: [
         {
             title: 'First Date Highlights',
-            description: 'Memorable moments from our first date',
+            description: 'Memorable moments from our Night out date',
             thumbnail: 'images/AnimatedPic.jpg',
-            src: 'videos/Funny_tamil_engagement_invite.mp4'
+            src: 'videos/FirstNi8Out.mp4'
         },
         {
             title: 'Anniversary Celebration',
-            description: 'Celebrating our special day',
-            thumbnail: 'images/AnimatedPic2.jpg',
-            src: 'videos/sample-2.mp4'
+            description: 'Celebrating our special day with morning sun raise for the 1st time',
+            thumbnail: 'images/AnimatedPic.jpg',
+            src: 'videos/FirstSunRaise.mp4'
         },
         {
             title: 'Travel Adventure',
-            description: 'Exploring new places together',
+            description: 'Exploring new places together and vibe together',
             thumbnail: 'https://via.placeholder.com/400x225?text=Video+3',
-            src: 'videos/sample-3.mp4'
+            src: 'videos/FunTime.mp4'
         },
         {
             title: 'Surprise Moment',
-            description: 'A special surprise I made for you',
+            description: 'A special surprise I made for you this day everything happen as per our long time dream',
             thumbnail: 'https://via.placeholder.com/400x225?text=Video+4',
-            src: 'videos/sample-4.mp4'
-        },
-        {
-            title: 'Love Montage',
-            description: 'Our best moments compiled',
-            thumbnail: 'https://via.placeholder.com/400x225?text=Video+5',
-            src: 'videos/sample-5.mp4'
-        },
-        {
-            title: 'Future Dreams',
-            description: 'A glimpse into our future together',
-            thumbnail: 'https://via.placeholder.com/400x225?text=Video+6',
-            src: 'videos/sample-6.mp4'
+            src: 'videos/2ndSun.mp4'
         }
     ],
 

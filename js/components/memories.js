@@ -5,18 +5,20 @@
 
 const MemoriesComponent = {
     memories: [
-        { src: 'images/AnimatedPic.png', date: 'Jan 1, 2021', caption: 'The beginning of our story' },
-        { src: 'images/AnimatedPic1.png', date: 'Feb 14, 2021', caption: 'Our first Valentine together' },
-        { src: 'images/AnimatedPic3.png', date: 'Mar 15, 2021', caption: 'Spring adventure' },
-        { src: 'images/AnimatedPic4.png', date: 'May 20, 2021', caption: 'Summer getaway' },
-        { src: 'images/AnimatedPic5.png', date: 'Jul 4, 2021', caption: 'Celebration of love' },
-        { src: 'images/AnimatedPic6.png', date: 'Aug 10, 2021', caption: 'Beach day' },
-        { src: 'https://via.placeholder.com/400x300?text=Memory+7', date: 'Sep 18, 2021', caption: 'Autumn romance' },
-        { src: 'https://via.placeholder.com/400x300?text=Memory+8', date: 'Dec 25, 2021', caption: 'First Christmas together' },
-        { src: 'https://via.placeholder.com/400x300?text=Memory+9', date: 'Jan 20, 2022', caption: 'One year of joy' },
-        { src: 'https://via.placeholder.com/400x300?text=Memory+10', date: 'Mar 8, 2022', caption: 'Spring renewal' },
-        { src: 'https://via.placeholder.com/400x300?text=Memory+11', date: 'Jun 15, 2022', caption: 'Summer love' },
-        { src: 'https://via.placeholder.com/400x300?text=Memory+12', date: 'Dec 31, 2022', caption: 'Year in review' }
+        { src: 'images/FisrtPic.jpg', date: 'Aug 27, 2022', caption: 'The beginning of our story' },
+        { src: 'images/FamatcheFeb14.jpg', date: 'Feb 14, 2024', caption: 'Our first Valentine together' },
+        { src: 'images/Feb14Gift.jpg', date: 'Feb 14, 2024', caption: 'Our first Valentine together' },
+        { src: 'images/TwoGiftDress.jpg', date: 'Feb 19, 2023', caption: 'Wear both with a gifted dress' },
+        { src: 'images/FirstBdaywithYou.jpg', date: 'Jun 10, 2023', caption: 'My first birthday with you' },
+        { src: 'images/1stBdaywithMe.jpg', date: 'Sep 26, 2023', caption: 'Your first birthday with me' },
+        { src: 'images/NewRing.jpg', date: 'Jul 13, 2023', caption: 'You gift me with new ring' },
+        { src: 'images/WearthatDrz.jpg', date: 'Oct 02, 2023', caption: 'You wear that dress for me'},
+        { src: 'images/LastHostelOut.jpg', date: 'Apr 07, 2024', caption: 'Last day at your hostel life and went for temple' },
+        { src: 'images/CheFam1Out.jpg', date: 'Apr 11, 2024', caption: 'After Family come to chennai we went for outing'},
+        { src: 'images/MysoreMem.jpg', date: 'Jul 04, 2025', caption: 'Go for trip to Mysore'},
+        { src: 'images/MysoreMem1.jpg', date: 'Jul 04, 2025', caption: 'After Family come to chennai we went for outing'},
+        { src: 'images/MysoreMem2.jpg', date: 'Jul 04, 2025', caption: 'After Family come to chennai we went for outing'},
+        { src: 'images/Engagement.jpg', date: 'Mar 15, 2026', caption: 'We got engaged. Finally we won our life'}
     ],
 
     /**
