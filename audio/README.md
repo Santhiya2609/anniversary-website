@@ -9,7 +9,7 @@ Place your romantic background music files in this folder. The website comes wit
 - **Bitrate**: 128-192 kbps (good quality at smaller file size)
 - **Size**: Keep under 20MB per song
 - **Sample Rate**: 44.1 kHz standard
-
+      
 ### How to Update:
 
 1. Add your music files to this folder
